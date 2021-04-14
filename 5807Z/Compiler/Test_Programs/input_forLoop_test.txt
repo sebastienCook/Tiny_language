@@ -1,0 +1,21 @@
+func foo(arg a, arg b)
+(
+	int i;
+	int g;
+	int df;
+	for(i=b;(i>0);i = i-1;)(
+		a = a + 1;
+	)
+	return a;
+)
+func main(void)
+(
+	int x;
+	int y;
+	int z;
+	x = 10;
+	y = 6;
+	z = foo(x,y);
+	return z;
+)
+
