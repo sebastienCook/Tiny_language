@@ -44,7 +44,7 @@ This project was created using Vivado 2016.4 (The version used at Carleton Unive
 
 The Verilog project requires Vivado to run. Running the behavioural simulation in Vivado yields the nicest results since I've added "peek wires" that peek into the system at key locations to generate a nice simulation display at every time step rather than only offer the final result.
 
-1. Open the project in Vivado by either opening it through Vivado or double clicking Tiny_language.processor.xpr
+1. Open the project in Vivado by either opening it through Vivado or double clicking Tiny_language_processor.xpr
 2. Once the project is open in Vivado, check Sim_1/Memory File/Code_generated.mem 
 	- if there is a red question mark follow ADD Code Generated file instructions before continuing 
 3. In the flow navigator, select Run Simulation -> Behavioural simulation
