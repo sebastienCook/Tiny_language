@@ -56,3 +56,14 @@ ADD Code Generated file:
 1. right click on sim_1 and select Add Sources
 2. in the new window select Add or create simulation sources
 3. select the green plus on the left and Add Files. Then select Code_generated.mem
+
+
+
+NOTE:  I’d like to mention that no print command was added in the tiny language. This is a feature I regret not adding and can no longer add due to time constraints. This means that a program can only output one final answer, severely limiting the flexibility of the tiny language. Given time, I would implement the print function as follows:
+	1.	Add a print key word and token in the scanner
+	2.	In the parser I’d add the pattern “Print LP expression RP SC” which amounts to print(x); or print(x+3); or print(function call);
+		Note: The print statement will only print integers, remaining in the spirit of the tiny language.
+	3.	This would be added as a node in the DST with the expression pointed to by down.
+	4.	During interpretation of P_code, when a print statement is encountered, it will utilize printf from the C library and print the item at the top of the stack. And reduce Sp by one. 
+
+
